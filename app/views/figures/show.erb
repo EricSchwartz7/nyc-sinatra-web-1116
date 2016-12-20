@@ -5,10 +5,9 @@
     <title></title>
   </head>
   <body>
-    <h1>ALL LANDMARKS</h1>
-    <% @landmarks.each do |l| %>
-      <h3><%= l.name %></h3>
-      <h3><%= l.year_completed %></h3>
+    <%= @figure.name %>
+    <% @figure.landmarks.each do |landmark| %>
+      <%= landmark.name %>
     <% end %>
   </body>
 </html>
